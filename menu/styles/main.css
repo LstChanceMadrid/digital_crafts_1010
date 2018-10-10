@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 1em;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    header hr {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .header-title {
+        text-align: center;
+        padding: 0 1em;
+        width: 100%;
+    }
+
+    .header-description {
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-bar {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+        .nav-item {
+            padding: 1em;
+            border-left: 1px solid gray;
+            background: yellow;
+        }
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+    .dish-list {
+        font-size: 1.5em;
+        margin: auto;
+    }
+
+    .dish-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+        .dish-image {
+            padding: 2em;
+            align-self: center;
+            transform: scale(1.25);
+        }
+
+        .dish-info {
+            display: flex;
+            flex-wrap:wrap;
+            flex: 45%;
+            text-align: center;
+            padding: 1em;
+        }
+
+            .dish-header {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+
+                .dish-title {
+                    width: 85%;
+                }
+
+                .dish-price {
+                    flex: 15%;
+                    text-align: right;
+                    font-weight: bold;
+                    font-size: 1.2em;
+                }
+
+footer {
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+}
+
+
+@media screen and (max-width:780px) {
+
+
+    .dish-image {
+        transform: scale(1);
+        padding: 0.5em 0 1em 0;
+    }
+    .dish-info {
+        padding: 0 1em;
+        font-size: .75em;
+    }
+
+        .dish-title {
+            margin: 0;
+            padding-bottom: 0;
+        }
+
+        .dish-description {
+            margin: 0 auto;
+            padding: 0;
+        }
+    
+
+
+}

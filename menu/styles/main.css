@@ -1,55 +1,75 @@
 body {
-    margin: 0;
-    padding: 1em;
-    overflow-x: hidden;
-}
-
-header {
-    width: 100%;
     display:flex;
     flex-wrap: wrap;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-image: url('table.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+header {
+    text-align: center;
+    width: 90%;
+    padding: 1em;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.8);
 }
 
     header hr {
         width: 90%;
-        margin: 0 auto;
     }
 
     .header-title {
-        text-align: center;
-        padding: 0 1em;
         width: 100%;
     }
 
     .header-description {
-        text-align: center;
         width: 100%;
     }
 
     .nav-bar {
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
         .nav-item {
-            padding: 1em;
+            padding: 0.75em;
             border-left: 1px solid gray;
-            background: yellow;
+            background: gray;
         }
 
 main {
     width: 90%;
     margin: 0 auto;
-    padding: 1em;
+
+    background: rgba(0, 0, 0, 0.6);
 }
 
     .dish-list {
         font-size: 1.5em;
-        margin: auto;
+        opacity: 1;
+        margin: 0 auto;
+        transition: 3s;
+    }
+
+    .fade {
+        opacity: 0;
+        transition: 3s;
     }
 
     .dish-container {
+        width:90%;
+        margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -57,7 +77,6 @@ main {
     }
 
         .dish-image {
-            padding: 2em;
             align-self: center;
             transform: scale(1.25);
         }
@@ -81,16 +100,16 @@ main {
                 }
 
                 .dish-price {
-                    flex: 15%;
+                    flex: 10%;
                     text-align: right;
                     font-weight: bold;
                     font-size: 1.2em;
                 }
 
 footer {
-    width: 100%;
-    padding: 1em;
+    width: 90%;
     text-align: center;
+    padding: 1em 0;
 }
 
 
@@ -102,7 +121,7 @@ footer {
         padding: 0.5em 0 1em 0;
     }
     .dish-info {
-        padding: 0 1em;
+        padding: 0 1em;        
         font-size: .75em;
     }
 
@@ -113,7 +132,7 @@ footer {
 
         .dish-description {
             margin: 0 auto;
-            padding: 0;
+
         }
     
 

@@ -1,11 +1,20 @@
 
 let menu = document.getElementById("dishes");
 
+let dishContainer = document.getElementsByClassName("dish-container")
+
+
+
 // loads all the dishes upon the pages initial load
+
+
+
 
 const loadAllDishes = () => {
 
     menu.innerHTML = "";
+
+    
     let allDishesTitle = `
                         <legend class="dish-legend">All Dishes</legend>
                         `;
@@ -30,9 +39,12 @@ const loadAllDishes = () => {
             </div>
             <hr>
             `;
-    
+
+        
         menu.insertAdjacentHTML('beforeend', menuItem);
+
     }
+    
 }
 
 
@@ -40,7 +52,9 @@ let allDishes = document.getElementById('all-dishes');
 // displays all dishes
 
 allDishes.addEventListener('click', function() {
+    
     loadAllDishes();
+
 });
 
 

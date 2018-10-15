@@ -45,8 +45,12 @@ header {
         .nav-item {
             padding: 0.75em;
             border-left: 1px solid gray;
-            background: gray;
+            background: rgba(50, 50, 50, 1);
         }
+
+            .nav-item:hover {
+                background: rgba(100, 100, 100, 1);
+            }
 
 main {
     width: 90%;
